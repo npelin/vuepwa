@@ -6,4 +6,11 @@ module.exports = defineConfig({
   //   port: 5174
   // },
   publicPath: process.env.NODE_ENV === "production" ? "/vuepwa/" : "/",
+  pwa: {
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      swSrc: './src/service-worker-dev.js',
+      //swDest: ''
+    },
+  },
 })
