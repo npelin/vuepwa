@@ -1,9 +1,0 @@
-version: '2.28.1'
-services:
-  vue: #服務名稱
-    image: vue-pwa-2024:latest
-    ports:
-      - "5175:5174"
-    environment:
-      - VARIABLE=${VARIABLE}
-    restart: on-failure
